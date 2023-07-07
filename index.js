@@ -1,8 +1,3 @@
-const process = require("process");
-//importing dotenv
-import dotenv from "dotenv";
-dotenv.config();
-
 //importing functions from firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import {
@@ -15,7 +10,7 @@ import {
 
 //database url
 const appSettings = {
-  databaseURL: process.env.DATABASEURL,
+  databaseURL: "",
 };
 
 const app = initializeApp(appSettings);
