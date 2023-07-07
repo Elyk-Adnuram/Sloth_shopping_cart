@@ -1,4 +1,6 @@
-import "dotenv/config.js";
+// import "dotenv/config.js";
+import dotenv from "./dotenv";
+dotenv.config();
 //importing functions from firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import {
@@ -10,8 +12,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 //importing dotenv
-import dotenv from "dotenv";
-dotenv.config();
+
 
 //database url
 const appSettings = {
