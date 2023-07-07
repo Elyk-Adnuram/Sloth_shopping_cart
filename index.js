@@ -24,10 +24,14 @@ const shoppingListEl = document.getElementById("shopping-list");
 //event listener to add items
 addButtonEl.addEventListener("click", function () {
   let inputValue = inputFieldEl.value;
-  // pushing items to database
-  push(shoppingListInDB, inputValue);
+ if (inputValue === "") {
+    alert("Please enter an item");
+  } else {
+    // pushing items to database
+    push(shoppingListInDB, inputValue);
 
-  clearInputFieldEl();
+    clearInputFieldEl();
+  }
 });
 //onValue function enables a snapshot of database to be taken. with a snapshot one can check if there are any items in the database
 onValue(shoppingListInDB, function (snapshot) {
