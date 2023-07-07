@@ -1,6 +1,7 @@
-// import "dotenv/config.js";
-import dotenv from "./dotenv";
+//importing dotenv
+import dotenv from "dotenv";
 dotenv.config();
+
 //importing functions from firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import {
@@ -10,9 +11,6 @@ import {
   onValue,
   remove,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-
-//importing dotenv
-
 
 //database url
 const appSettings = {
