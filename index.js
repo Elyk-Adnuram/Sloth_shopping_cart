@@ -1,7 +1,8 @@
+const process = require("process");
 //importing dotenv
 import dotenv from "dotenv";
 dotenv.config();
-const process = require("process");
+
 //importing functions from firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import {
